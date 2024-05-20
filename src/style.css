@@ -3,11 +3,16 @@
 }
 body {
     background-color: #fff7ed;
+    height: 100%;
 }
 
 nav, .content {
     background-color: #ffedd5;
     
+}
+
+.content, .buttons {
+    height: 100%;
 }
 
 header {
@@ -34,6 +39,8 @@ nav {
 
 .card {
     margin: 1rem;
-    background-color: #fff7ed ;
+    background-color: #fff7ed;
+    height: 200px;
+    width: 500px;
 }
 
