@@ -1,3 +1,4 @@
+import homeCards from "./homeCards"
 
 export default function home() {
     const div = document.createElement("div")
@@ -6,6 +7,7 @@ export default function home() {
     header.innerText = "Snackfinder"
 
     div.appendChild(header)
+ 
 
     return div
 }
