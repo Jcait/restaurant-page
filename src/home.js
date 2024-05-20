@@ -1,4 +1,3 @@
-import homeCards from "./homeCards"
 
 export default function home() {
     const div = document.createElement("div")

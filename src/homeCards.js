@@ -1,6 +1,7 @@
 // Function to 3 cards to the Page. 
 
-import { firstCard } from "./homeCardText"
+import { firstText, firstTitle, secondText, secondTitle, thirdText, thirdTitle } from "./homeCardText"
+
 
 
 export default function homeCards() {
@@ -8,17 +9,20 @@ export default function homeCards() {
     Carddiv.className = "buttons"
     for(let i = 0; i < 3; i++){
         let newDiv= document.createElement("div")
-        let title = document.createElement("h4")
-        let text = document.createElement("p")
         console.log(i)
         newDiv.className = "card"
         switch (i){
             case 0:
-                newDiv.appendChild(firstCard())
+                newDiv.appendChild(firstTitle())
+                newDiv.appendChild(firstText())
                 break;
             case 1:
+                newDiv.appendChild(secondTitle())
+                newDiv.appendChild(secondText())
                 break;
             case 2:
+                newDiv.appendChild(thirdTitle())
+                newDiv.appendChild(thirdText())
                 break;
         }
 
