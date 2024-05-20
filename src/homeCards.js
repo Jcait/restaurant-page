@@ -1,4 +1,4 @@
-
+// Function to 3 cards to the Page. 
 
 export default function homeCards() {
     const Carddiv = document.createElement("div")
