@@ -7,15 +7,11 @@ const btn = document.querySelectorAll("button")
 
 btn.forEach(button => {
     button.addEventListener("click", () => {
-        while(con.hasChildNodes()) {
-            con.removeChild(con.lastChild)
-            console.log("removed")
-        }
-        con.appendChild(home())
         switch(button.innerText) {
         case "Home": 
             console.log("Home has been pressed")
             con.appendChild(homeCards())
+            con.removeChild(con.lastChild)
             break;
         case "Menu":
             console.log("Menu has been pressed")
@@ -27,5 +23,8 @@ btn.forEach(button => {
         }
     })
 })
+
+con.appendChild(home())
+con.appendChild(homeCards())
 
 
