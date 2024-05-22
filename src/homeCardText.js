@@ -1,9 +1,10 @@
 
 
-export const firstTitle = ()  =>{
+export const firstTitle = (btnText)  =>{
     const title = document.createElement("h4")
-    title.innerText = "A Review by Gary the Goblin"
 
+    title.innerText = "A Review by Gary the Goblin"
+    console.log(`This is in CardText ${btnText}`)
     return title
 }
 
@@ -15,7 +16,7 @@ export const firstText = () => {
 
 }
 
-export const secondTitle = () => {
+export const secondTitle = (btnText) => {
     const title = document.createElement("h4")
     title.innerText = "Opening Times"
 

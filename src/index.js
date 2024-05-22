@@ -1,6 +1,7 @@
 import home from './home';
 import homeCards from './homeCards';
 import'./style.css';
+import test from './test';
 
 const con = document.getElementById("content")
 const btn = document.querySelectorAll("button")
@@ -10,7 +11,7 @@ btn.forEach(button => {
         switch(button.innerText) {
         case "Home": 
             console.log("Home has been pressed")
-            con.appendChild(homeCards())
+            con.appendChild(homeCards(button.innerText))
             con.removeChild(con.lastChild)
             break;
         case "Menu":

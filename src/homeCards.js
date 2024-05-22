@@ -4,16 +4,16 @@ import { firstText, firstTitle, secondText, secondTitle, thirdText, thirdTitle }
 
 
 
-export default function homeCards() {
+export default function homeCards(btnText) {
+    console.log(`This is in home cards ${btnText}`)
     const Carddiv = document.createElement("div")
     Carddiv.className = "buttons"
     for(let i = 0; i < 3; i++){
         let newDiv= document.createElement("div")
-        console.log(i)
         newDiv.className = "card"
         switch (i){
             case 0:
-                newDiv.appendChild(firstTitle())
+                newDiv.appendChild(firstTitle(btnText))
                 newDiv.appendChild(firstText())
                 break;
             case 1:
@@ -29,6 +29,7 @@ export default function homeCards() {
                 
 
         Carddiv.appendChild(newDiv)
+        console.log(btnText)
     }
     return Carddiv
 
