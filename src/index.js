@@ -1,5 +1,5 @@
 import home from './home';
-import homeCards from './homeCards';
+import homeCards from './cards';
 import'./style.css';
 import test from './test';
 
@@ -8,17 +8,23 @@ const btn = document.querySelectorAll("button")
 
 btn.forEach(button => {
     button.addEventListener("click", () => {
+        console.log(this)
         switch(button.innerText) {
         case "Home": 
             console.log("Home has been pressed")
-            con.appendChild(homeCards(button.innerText))
             con.removeChild(con.lastChild)
+            con.appendChild(homeCards(button.innerText))
+            test(button)
             break;
         case "Menu":
             console.log("Menu has been pressed")
+            con.removeChild(con.lastChild)
+            con.appendChild(homeCards(button.innerText))
             break;
         case "About":
             console.log("About has been pressed")
+            con.removeChild(con.lastChild)
+            con.appendChild(homeCards(button.innerText))
             break;
             
         }
@@ -26,6 +32,6 @@ btn.forEach(button => {
 })
 
 con.appendChild(home())
-con.appendChild(homeCards())
+con.appendChild(homeCards("Home"))
 
 

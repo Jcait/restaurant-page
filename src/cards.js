@@ -1,6 +1,6 @@
 // Function to 3 cards to the Page. 
 
-import { firstText, firstTitle, secondText, secondTitle, thirdText, thirdTitle } from "./homeCardText"
+import { firstText, firstTitle, secondText, secondTitle, thirdText, thirdTitle } from "./cardText"
 
 
 
@@ -17,11 +17,11 @@ export default function homeCards(btnText) {
                 newDiv.appendChild(firstText())
                 break;
             case 1:
-                newDiv.appendChild(secondTitle())
+                newDiv.appendChild(secondTitle(btnText))
                 newDiv.appendChild(secondText())
                 break;
             case 2:
-                newDiv.appendChild(thirdTitle())
+                newDiv.appendChild(thirdTitle(btnText))
                 newDiv.appendChild(thirdText())
                 break;
         }

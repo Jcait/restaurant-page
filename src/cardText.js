@@ -2,9 +2,18 @@
 
 export const firstTitle = (btnText)  =>{
     const title = document.createElement("h4")
-
-    title.innerText = "A Review by Gary the Goblin"
-    console.log(`This is in CardText ${btnText}`)
+    switch(btnText) {
+        case "Home": 
+            title.innerText = `Test`
+            console.log(`This is in CardText ${btnText}`)
+            break;
+        case "Menu":
+            title.innerText = btnText
+            break;
+        case "About":
+            title.innerText = btnText
+            break
+    }
     return title
 }
 
