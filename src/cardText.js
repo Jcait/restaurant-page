@@ -1,17 +1,17 @@
 
 
-export const firstTitle = (btnText)  =>{
+export const firstTitle = (btn)  =>{
     const title = document.createElement("h4")
-    switch(btnText) {
+    switch(btn.innerText) {
         case "Home": 
             title.innerText = `Test`
-            console.log(`This is in CardText ${btnText}`)
+            console.log(`This is in CardText ${btn}`)
             break;
         case "Menu":
-            title.innerText = btnText
+            title.innerText = btn.innerText
             break;
         case "About":
-            title.innerText = btnText
+            title.innerText = btn.innerText
             break
     }
     return title
