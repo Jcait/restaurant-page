@@ -14,15 +14,15 @@ export default function homeCards(btnText) {
         switch (i){
             case 0:
                 newDiv.appendChild(firstTitle(btnText))
-                newDiv.appendChild(firstText())
+                newDiv.appendChild(firstText(btnText))
                 break;
             case 1:
                 newDiv.appendChild(secondTitle(btnText))
-                newDiv.appendChild(secondText())
+                newDiv.appendChild(secondText(btnText))
                 break;
             case 2:
                 newDiv.appendChild(thirdTitle(btnText))
-                newDiv.appendChild(thirdText())
+                newDiv.appendChild(thirdText(btnText))
                 break;
         }
 
