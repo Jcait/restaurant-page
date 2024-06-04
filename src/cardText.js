@@ -8,7 +8,7 @@ export const firstTitle = (btn)  =>{
             console.log(`This is in CardText ${btn}`)
             break;
         case "Menu":
-            title.innerText = btn.innerText
+            title.innerText = `Nat 20 Nachos!`
             break;
         case "About":
             title.innerText = btn.innerText
