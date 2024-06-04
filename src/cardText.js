@@ -4,7 +4,7 @@ export const firstTitle = (btn)  =>{
     const title = document.createElement("h4")
     switch(btn.innerText) {
         case "Home": 
-            title.innerText = `Test`
+            title.innerText = `A review by Gary the Goblin`
             console.log(`This is in CardText ${btn}`)
             break;
         case "Menu":

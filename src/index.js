@@ -35,7 +35,7 @@ btn.forEach(button => {
         }
     })
 })
-
+homeBtn.disabled = true
 con.appendChild(home())
 con.appendChild(homeCards(homeBtn))
 
