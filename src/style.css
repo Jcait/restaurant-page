@@ -2,7 +2,9 @@
     color:  red;
 }
 body {
-    background-color: #fff7ed;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     margin: 0%;
 }
