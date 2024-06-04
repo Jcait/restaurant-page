@@ -8,13 +8,6 @@ export default function homeCards(btnText) {
     console.log(`This is in home cards ${btnText}`)
     const Carddiv = document.createElement("div")
     Carddiv.className = "buttons"
-    let cardAmnt
-    if (btnText.className == "home" || 
-        btnText.className == "about") {
-            cardAmnt = 3} 
-    else {
-        cardAmnt = 9
-    }
     for(let i = 0; i < 3; i++){
         let newDiv= document.createElement("div")
         newDiv.className = "card"

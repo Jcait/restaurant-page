@@ -1,4 +1,30 @@
 
+// Card Templates
+
+// switch(btn.innerText) {
+//     case "Home": 
+//         title.innerText = 
+//         break;
+//     case "Menu":
+//         title.innerText = 
+//         break;
+//     case "About":
+//         title.innerText = 
+//         break
+// }
+
+// switch(btn.innerText) {
+//     case "Home": 
+//         p.innerText = 
+//         break;
+//     case "Menu":
+//         p.innerText = 
+//         break;
+//     case "About":
+//         p.innerText = 
+//         break
+// }
+
 
 export const firstTitle = (btn)  =>{
     const title = document.createElement("h4")
@@ -11,7 +37,7 @@ export const firstTitle = (btn)  =>{
             title.innerText = `Nat 20 Nachos!`
             break;
         case "About":
-            title.innerText = btn.innerText
+            title.innerText = `About us!`
             break
     }
     return title
