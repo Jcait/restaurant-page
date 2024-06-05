@@ -5,8 +5,9 @@ body {
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    min-height: 100vh;
     margin: 0%;
+    position: relative;
 }
 
 nav, .content {
@@ -84,3 +85,11 @@ button:disabled{
     background-color: #fff7ed;
     color: black;
 }
+
+footer {
+    background-color: #a16207;
+    bottom:0;
+    width:100%;
+}
+
+ 
