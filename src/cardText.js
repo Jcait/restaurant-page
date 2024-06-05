@@ -132,8 +132,18 @@ export const thirdTitle = (btn) => {
 
 export const thirdText = (btn) => {
     const text = document.createElement("p")
-    text.innerText = `Melchitar, Geb`
-    text.className = "location"
+  
+    switch(btn.innerText) {
+    case "Home": 
+        text.innerText = `Melchitar, Geb`
+            text.className = "location"
+        break;
+    case "Menu":
+        text.innerText = `Sink your teeth into the maze of meat pizza created by our minotaur chefs!`
+        break;
+    case "About":
+        break
+}
 
     return text
 }
