@@ -115,7 +115,17 @@ export const secondText = (btn) => {
 
 export const thirdTitle = (btn) => {
     const title = document.createElement("h4")
-    title.innerText = "Location"
+    switch(btn.innerText) {
+        case "Home": 
+            title.innerText = "Location"
+
+            break;
+        case "Menu":
+            title.innerText = `Minotaurs Meatfeast Pizza`
+            break;
+        case "About":
+            break
+}
 
     return title
 }

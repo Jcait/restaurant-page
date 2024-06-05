@@ -7,8 +7,16 @@ import { firstText, firstTitle, secondText, secondTitle, thirdText, thirdTitle }
 export default function homeCards(btnText) {
     console.log(`This is in home cards ${btnText}`)
     const Carddiv = document.createElement("div")
+    let amount= 0
+    if(btnText.className == "home" ||
+        btnText.className == "menu"
+    ) {
+        amount = 3 
+    } else {
+        amount = 2
+    }
     Carddiv.className = "buttons"
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < amount; i++){
         let newDiv= document.createElement("div")
         newDiv.className = "card"
         switch (i){
