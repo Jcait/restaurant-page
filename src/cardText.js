@@ -68,7 +68,7 @@ export const secondTitle = (btn) => {
         title.innerText = "Opening Times"
         break;
     case "Menu":
-        title.innerText = `Cockcatrice Combo `
+        title.innerText = `Cockatrice Combo `
         break;
     case "About":
         title.innerText = `Contact us`
